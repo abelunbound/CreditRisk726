@@ -147,9 +147,9 @@ def main():
     purpose = st.selectbox('Purpose', purpose_options)
 
     # Collect input from user using sliders and dropdown
-    duration = st.slider('Duration in months', 0, 100, 12)
+    duration = st.slider('Duration in months', 1, 36, 12)
     installment_rate = st.slider('Installment rate in % of disposable income', 0, 10, 5)
-    age = st.slider('Age in years', 18, 1000, 30)
+    age = st.slider('Age in years', 18, 80, 30)
 
     # Dropdown for 'Checking account' field
     checking_account = ["no checking account", "<0 DM", "0 <= <200 DM", ">= 200 DM "]
